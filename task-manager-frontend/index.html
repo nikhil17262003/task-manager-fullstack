@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📝 Task Manager</h1>
+
+    <div class="email-box">
+        <input type="email" id="email" placeholder="Enter your email" />
+        <button onclick="loadTasks()">Load Tasks</button>
+    </div>
+
+    <div class="task-form">
+        <input type="text" id="title" placeholder="Task title" />
+        <input type="text" id="description" placeholder="Task description" />
+        <button class="add-btn" onclick="createTask()">Add Task</button>
+    </div>
+
+    <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
